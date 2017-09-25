@@ -1,0 +1,13 @@
+
+---
+
+- name: Building configuration
+  hosts: spine01_ints
+  connection: local
+  gather_facts: no
+  pre_tasks:
+    - include_vars: vars.lab.yml
+  
+  tasks:
+    - import_role:
+        name: interfaces

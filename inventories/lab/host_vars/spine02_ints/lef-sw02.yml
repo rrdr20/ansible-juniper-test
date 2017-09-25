@@ -1,0 +1,7 @@
+interfaces:
+  - name: xe-0/0/0
+    unit: 12
+    addr: 192.168.10.6
+  - name: xe-0/0/1
+    unit: 22
+    addr: 192.168.20.6

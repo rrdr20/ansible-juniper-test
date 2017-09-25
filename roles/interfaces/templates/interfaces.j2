@@ -1,0 +1,18 @@
+{% for interface in interfaces %}
+interface {
+    {{ interface.name }} {
+{% if desc is defined %}
+        description "{{ interface.desc }}";
+{% endif %}
+        vlan-tagging;
+        mtu {{ phy_int_mtu }};
+        unit {{ interface.unit }} {
+            vlan-id {{ interface.unit }};
+            family inet {
+                mtu {{ log_int_mtu }};
+                address {{ interface.addr }}/32;
+            }
+        }
+    }
+{% endfor %}
+}

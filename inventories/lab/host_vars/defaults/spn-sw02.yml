@@ -1,0 +1,18 @@
+
+---
+
+loopback: 172.16.0.2
+
+interfaces:
+  - name: xe-0/0/0
+    unit: 21
+    addr: 192.168.20.1
+  - name: xe-0/0/1
+    unit: 22
+    addr: 192.168.20.5
+  - name: xe-0/0/2
+    unit: 23
+    addr: 192.168.20.9
+  - name: xe-0/0/3
+    unit: 24
+    addr: 192.168.20.13
