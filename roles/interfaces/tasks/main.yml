@@ -1,9 +1,7 @@
 
 ---
 
-- debug: var=hostvars
-
 - name: Building interface configuration
   template: >
     src=interfaces.j2
-    dest={{ config_dir }}/{{ inventory_hostname }}.conf
+    dest={{ config_dir }}/{{ interface_group }}/{{ inventory_hostname }}.conf

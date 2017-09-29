@@ -13,7 +13,7 @@ spine02_interfaces:
     unit: 21
     addr: 192.168.21.2
 
-interfaces:
+server_interfaces:
   - name: xe-0/0/2
     unit: 31
     addr: 192.168.31.2

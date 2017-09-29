@@ -1,13 +1,17 @@
 
 ---
 
-- name: Building configuration
+- name: Building configuration for interfaces connected to SPN-SW01
   hosts: spine01_ints
+  vars:
+    interface_group: "spine01_interfaces"
   connection: local
   gather_facts: no
-  pre_tasks:
-    - include_vars: vars.lab.yml
-  
+
   tasks:
+    - name: Setup directory for config files...
+      file: path={{ config_dir }}/{{ interface_group }} state=directory
+      run_once: True
+
     - import_role:
         name: interfaces

@@ -1,5 +1,5 @@
-{% for interface in interfaces %}
 interface {
+{% for interface in hostvars[inventory_hostname][interface_group] %}
     {{ interface.name }} {
 {% if desc is defined %}
         description "{{ interface.desc }}";
