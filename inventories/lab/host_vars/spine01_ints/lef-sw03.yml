@@ -1,4 +1,0 @@
-interfaces:
-  - name: xe-0/0/0
-    unit: 13
-    addr: 192.168.10.10

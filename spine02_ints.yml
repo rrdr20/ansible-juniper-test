@@ -1,0 +1,17 @@
+
+---
+
+- name: Building configuration for interfaces connected to SPN-SW01
+  hosts: spine02_ints
+  vars:
+    interface_group: "spine02_interfaces"
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: Setup directory for config files...
+      file: path={{ config_dir }}/{{ interface_group }} state=directory
+      run_once: True
+
+    - import_role:
+        name: interfaces

@@ -1,13 +1,11 @@
 [spine01_ints]
 spn-sw01
-spn-sw02
 lef-sw01
 lef-sw02
 lef-sw03
 lef-sw04
 
 [spine02_ints]
-spn-sw01
 spn-sw02
 lef-sw01
 lef-sw02

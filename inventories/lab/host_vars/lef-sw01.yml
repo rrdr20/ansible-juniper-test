@@ -1,0 +1,22 @@
+
+---
+
+loopback: 172.16.0.11
+
+spine01_interfaces:
+  - name: xe-0/0/0
+    unit: 11
+    addr: 192.168.11.2
+
+spine02_interfaces:
+  - name: xe-0/0/1
+    unit: 21
+    addr: 192.168.21.2
+
+interfaces:
+  - name: xe-0/0/2
+    unit: 31
+    addr: 192.168.31.2
+  - name: xe-0/0/3
+    unit: 41
+    addr: 192.168.41.2
